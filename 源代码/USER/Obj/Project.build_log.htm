@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 asus, 1, LIC=GMZI6-DBKZ7-Z9PG9-4IAA0-PJ1CF-TN6IX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\keil\keil\ARM\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\浏览器下载\Github\基于小米 MiMo 大模型的智能水产养殖水质闭环调控 Agent 系统\MiMo-Aquaculture-Agent\源代码\USER\STM32_YFCDZ.uvprojx
+Project File Date:  04/29/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil\keil\ARM\Core\ARM\ARMCC\Bin'
+Build target 'YFCDZ'
+compiling Flash.c...
+..\SYSTEM\FLASH\flash.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\FLASH\Flash.c(41): error:  #20: identifier "NULL" is undefined
+      if(pBuf == NULL || len == 0) return;
+..\SYSTEM\FLASH\Flash.c(64): error:  #20: identifier "NULL" is undefined
+      if(pBuf == NULL || len == 0) return;
+..\SYSTEM\FLASH\Flash.c(71): warning:  #1-D: last line of file ends without a newline
+  }
+..\SYSTEM\FLASH\Flash.c: 2 warnings, 2 errors
+compiling usart3.c...
+..\SYSTEM\USART\usart3.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\USART\usart3.c(105): error:  #20: identifier "va_list" is undefined
+      va_list arg_ptr;
+..\SYSTEM\USART\usart3.c(106): warning:  #223-D: function "va_start" declared implicitly
+      va_start(arg_ptr, fmt);
+..\SYSTEM\USART\usart3.c(108): warning:  #223-D: function "vsnprintf" declared implicitly
+      vsnprintf((char *)USART3_TX_BUF, USART3_MAX_TX_LEN + 1, fmt, arg_ptr);
+..\SYSTEM\USART\usart3.c(109): warning:  #223-D: function "va_end" declared implicitly
+      va_end(arg_ptr);
+..\SYSTEM\USART\usart3.c(144): warning:  #1-D: last line of file ends without a newline
+  }
+..\SYSTEM\USART\usart3.c: 5 warnings, 1 error
+compiling mimo_token.c...
+..\SYSTEM\USART\usart2.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\USART\usart3.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+mimo_token.c(13): error:  #20: identifier "NULL" is undefined
+      if (len == 0 || buf == NULL) return;
+mimo_token.c(16): warning:  #223-D: function "strstr" declared implicitly
+      if (strstr((char *)buf, "TOKEN:") != NULL)
+mimo_token.c(16): error:  #20: identifier "NULL" is undefined
+      if (strstr((char *)buf, "TOKEN:") != NULL)
+mimo_token.c(18): warning:  #223-D: function "strtok" declared implicitly
+          char *token = strtok((char *)buf, ":");
+mimo_token.c(18): error:  #144: a value of type "int" cannot be used to initialize an entity of type "char *"
+          char *token = strtok((char *)buf, ":");
+mimo_token.c(19): error:  #513: a value of type "int" cannot be assigned to an entity of type "char *"
+          token = strtok(NULL, "\r\n"); // ??Token???
+mimo_token.c(23): warning:  #1-D: last line of file ends without a newline
+  }
+mimo_token.c: 5 warnings, 4 errors
+compiling main.c...
+..\SYSTEM\TIMER\timer.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\FLASH\flash.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\USART\usart2.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\USART\usart3.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\main.c(35): warning:  #47-D: incompatible redefinition of macro "MIMO_FLASH_TOKEN_ADDR"  (declared at line 8 of "..\SYSTEM\FLASH\flash.h")
+  #define MIMO_FLASH_TOKEN_ADDR 0x0801F010  // Token瀛樺偍Flash鍦板潃锛堥伩寮�鍘熸湁闃堝�煎瓨鍌ㄥ尯锛?
+..\USER\main.c(95): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "u16 *"
+      FLASH_ReadBuffer(
+IMO_FLASH_TOKEN_ADDR, (uint8_t*)&g_mimoToken, sizeof(MimoTokenInfo));
+..\USER\main.c(116): error:  #167: argument of type "uint8_t *" is incompatible with parameter of type "u16 *"
+      FLASH_WriteBuffer(
+IMO_FLASH_TOKEN_ADDR, (uint8_t*)&g_mimoToken, sizeof(MimoTokenInfo));
+..\USER\main.c(141): warning:  #177-D: variable "tokenStr"  was declared but never referenced
+      char tokenStr[64] = {0};
+..\USER\main.c(142): warning:  #177-D: variable "code"  was declared but never referenced
+      int code = -1;
+..\USER\main.c(202): error:  #20: identifier "wifiConfigMode" is undefined
+              if (wifiConfigMode == 0) {
+..\USER\main.c: 7 warnings, 3 errors
+".\Obj\Project.axf" - 10 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_YFCDZ
+  D:\keil\keil\ARM\Pack\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

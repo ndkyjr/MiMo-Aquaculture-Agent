@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i '859s/gizwitsHandle/#gizwitsHandle  # 注释：已移除/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '859a\\\\\\\\n\\\\\\\\t\\\\t\\\\t\\\\\\\\tSendBluetoothData\\(sensorData.temp / 10.0f, sensorData.PH, sensorData.TS\\);' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '873s/gizwitsHandle/#gizwitsHandle  # 注释：已移除/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '873a\\\\\\\\n\\\\\\\\t\\\\\\\\tSendBluetoothData\\(sensorData.temp / 10.0f, sensorData.PH, sensorData.TS\\);' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '706s/^#usart2_init/\\\\/\\\\/ usart2_init/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '706s/nusart3_init/usart3_init/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '709s/DelayMs/delay_ms/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '731s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '732s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '733s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '734s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '735s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '748s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '749s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '750s/Sensorthreshold/Sensorthreshold/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '739s/userInit\\(\\);/\\\\/\\\\/ userInit\\(\\);/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '740,743s/^Gizwits/\\\\/\\\\/ Gizwits/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '877s/userHandle\\(\\);/\\\\/\\\\/ userHandle\\(\\);/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '877,878s/gizwitsHandle/\\\\/\\\\/ gizwitsHandle/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '862,863s/^[[:space:]]*userHandle\\(\\);/\\\\/\\\\/& userHandle\\(\\);/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '862,863s/^[[:space:]]*gizwitsHandle/\\\\/\\\\/& gizwitsHandle/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '862s/^.*userHandle.*$/\\\\/\\\\/ userHandle\\(\\);  \\\\/\\\\/ 注释：数据点更新已移除/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")",
+      "Bash(sed -i '863s/^.*gizwitsHandle.*$/\\\\/\\\\/ gizwitsHandle\\(\\(dataPoint_t *\\)&currentDataPoint\\);  \\\\/\\\\/ 注释：上传云端处理已移除/' \"d:/浏览器下载/60.STM32水质检测系统\\(升级版\\)/1.源代码（面包板可用）/源代码/USER/main.c\")"
+    ]
+  }
+}
